@@ -1,0 +1,340 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+
+/* reset mini */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eee;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  color: #000;
+}
+
+footer p {
+  margin: 0;
+}
+
+i {
+  margin-bottom: 5px;
+}
+
+.text-centered {
+    text-align: center;
+}
+
+.column-container {
+    display: flex;
+    flex-flow: column;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  background-color: #31bdc4;
+  padding: 10px 30px;
+  position: fixed;
+  width: 100%;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  float: left;
+  margin: 0px 10px;
+  border-bottom: solid 1px transparent;
+  transition: 0.5s;
+}
+
+.menu li:hover {
+  border-bottom: solid 1px #fff;
+}
+
+.menu li a {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  color: #fff;
+  marker: none;
+}
+
+.menu .search {
+  display: flex;
+  align-items: center;
+  padding: 0px 10px 0px 0px;
+}
+
+.main-search {
+  height: 30px;
+  padding-left: 15px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+
+.menu .search span {
+  color: #fff;
+}
+
+.img-banner {
+  width: 70%;
+  margin: 100px 0px;
+}
+
+.info-content h1 {
+  margin-bottom: 5px;
+  font-size: 3em;
+}
+
+.info-content h2 {
+  margin-bottom: 50px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 30px;
+  min-height: 100vh;
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.15);
+}
+
+.header-info {
+  height: auto;
+  width: 50%;
+  padding: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-info p {
+  text-align: justify;
+}
+
+.list-items {
+  display: flex;
+  text-align: initial;
+  margin-left: 30px;
+}
+
+.header-banner {
+  background-size: cover;
+  width: 50%;
+}
+
+h2 {
+  margin-bottom: 5px;
+}
+
+.container {
+  min-height: 100vh;
+}
+
+.pros {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 250px;
+}
+
+.info {
+  display: flex;
+}
+
+.info.up {
+    margin-top: 30px;
+}
+
+.info > div {
+  width: 50%;
+}
+
+.card-info {
+  padding: 75px 125px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-info p {
+  text-align: center;
+}
+
+.img-info {
+  background-color: #000;
+  min-height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.img-right {
+  background-image: url(../images/pessoaDeMascara.jpeg);
+}
+
+.img-left {
+  background-image: url(../images/epi.jpeg);
+}
+
+.content {
+  min-height: 30vh;
+}
+
+.services-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.services {
+  display: flex;
+  min-height: 250px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.services-info {
+  text-align: center;
+  max-width: 250px;
+}
+
+.core {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 250px;
+}
+
+.core-info {
+  text-align: center;
+  max-width: 250px;
+}
+
+.footer {
+  display: flex;
+}
+
+.footer-left {
+  flex: 4;
+  background-color: antiquewhite;
+  padding: 90px;
+  display: flex;
+  flex-flow: column;
+}
+
+.footer-left .final-cm {
+    flex: 3;
+}
+
+.footer-left .rights {
+    flex: 0;
+}
+
+.footer-right {
+  flex: 3.5;
+  background-color: azure;
+  padding: 30px 0px;
+}
+/* Formulário */
+
+fieldset {
+  padding: 5px;
+  border: none;
+}
+
+.input-textos,
+textarea {
+  height: 30px;
+  padding-left: 15px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  width: 100%;
+  border: 1px solid #555;
+}
+
+textarea {
+  height: 200px;
+  resize: none;
+}
+
+form {
+  padding: 35px;
+  max-width: 405px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-submit {
+    background: coral;
+    color: #140d4f;
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 14px;
+    outline: none;
+    cursor: pointer;
+    transition: transform .3s ease;
+}
+
+h4.text-centered {
+    margin-bottom: 5px;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+@media (max-width: 800px) {
+    .header {
+        flex-wrap: wrap;
+        flex-flow: column-reverse;
+    }
+
+    .header-info{
+        width: 100%;
+    }
+
+    .header-banner {
+        width: 100%;
+    }
+
+    .img-banner {
+        width: 50%;
+    }
+
+    .info {
+        flex-wrap: wrap;
+    }
+
+    .info > div {
+        width: 100%;
+    }
+
+    .info.down {
+        flex-flow: column-reverse;
+    }
+
+    .footer {
+        flex-flow: column-reverse;
+    }
+
+    .footer-left {
+        padding: 30px 90px;
+    }
+    .footer-left .rights {
+        margin-top: 30px;
+    }
+}
